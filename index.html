@@ -22,7 +22,7 @@
 </head>
 <body class="manrope-font bg-slate-50">
   <header class="container mx-auto px-6">
-          <!-- navbar -->
+    <!-- navbar -->
       <div class="navbar">
         <div class="navbar-start">
           <a class="btn btn-ghost text-2xl font-bold">
@@ -42,13 +42,13 @@
           </ul>
         </div>
           <div class="navbar-end gap-3">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-8 p-2 hidden lg:flex md:flex bg-white rounded-3xl">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-8 hidden lg:flex md:flex bg-white p-2 rounded-3xl">
                   <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" />
                 </svg> 
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 p-2 hidden lg:flex md:flex bg-white rounded-3xl">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 hidden lg:flex md:flex bg-white p-2 rounded-3xl">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 md:hidden lg:hidden">
                   <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
                 </svg>                  
             <a class="btn bg-[#ABEF5F] rounded-3xl hidden md:flex lg:flex text-lg font-bold">Book Consult
@@ -72,14 +72,16 @@
                         <div>
                           <h1 class="text-5xl font-bold">A barn house of this design has a <br> striking appearance</h1>
                           <p class="py-6">
-                              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+                              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br class="hidden lg:block"> accents, and large windows that flood the space with natural light.
                           </p>
-                          <button class="btn w-full lg:w-40 rounded-3xl bg-lime-200">
+                          <div class="flex md:justify-center lg:justify-center">
+                            <button class="btn w-full md:w-40 lg:w-40 rounded-3xl bg-[#d7f7b4]">
                               View Details
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 bg-[#ABEF5F] rounded-3xl">
                                   <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" />
                                 </svg> 
                           </button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -92,12 +94,19 @@
       <!--About us section-->
       <div class="container mx-auto px-6 lg:flex justify-around">
         <div>
-          <button class="btn rounded-3xl">About us</button>
+          <div class="text-center lg:text-start">
+            <button class="btn rounded-3xl">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                <path fill-rule="evenodd" d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clip-rule="evenodd" />
+              </svg>
+              About us
+            </button>
+          </div>
           <h2 class="text-3xl font-bold my-3 text-center lg:text-start">
             We design thoughtful, <br> liveable spaces
           </h2>
           <p class="text-center lg:text-start px-6 lg:px-0">
-            The barn house captivates with its blend of rustic charm and <br> 
+            The barn house captivates with its blend of rustic charm and <br class="hidden lg:block"> 
             modern sophistication, featuring weathered wood, sleek metal accents.
           </p>
           <div class="my-3 h-32 lg:h-20 bg-white flex items-center rounded-2xl">
@@ -108,7 +117,7 @@
               </p>
             </div>
           </div>
-          <div class="my-3 h-20 bg-white flex items-center rounded-2xl">
+          <div class="my-3 h-32 lg:h-20 bg-white flex items-center rounded-2xl">
             <img class="size-12 mx-4" src="./assets/residential.png" alt="">
             <div>
               <h4 class="text-lg font-semibold mb-1">Residential</h4>
@@ -140,7 +149,7 @@
           </div>
         </div>
         <!-- cards -->
-        <div class="container mx-auto grid grid-cols-1 lg:flex gap-4">
+        <div class="container mx-auto grid grid-cols-1 md:grid md:grid-cols-2 lg:flex gap-4">
           <div class="card card-compact bg-[#E7C1D3] lg:w-96">
             <div class="m-3">
               <img
@@ -195,7 +204,65 @@
           </div>
         </div>
       </div>
+      <!-- discussion section -->
+      <div class="px-6 lg:px-36">
+        <div class="hero mt-16">
+          <div class="hero-content text-center">
+            <div>
+              <button class="btn bg-[#d7f7b4] rounded-3xl my-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                  <path fill-rule="evenodd" d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clip-rule="evenodd" />
+                </svg>                  
+                Let’s Connect
+              </button>
+              <h2 class="text-3xl font-bold">Let’s Discuss Next Project</h2>
+              <p class="py-4">
+                The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- form -->
+        <div class="lg:col-span-2">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div>
+              <label class="text-lg font-semibold mb-3" for=""></label>
+              <br>
+              <input class="mt-3 p-4 border-none outline-none bg-white rounded-full w-full" type="text" placeholder="First Name*">
+            </div>
+            <div>
+              <label class="text-lg font-semibold mb-3" for=""></label>
+              <br>
+              <input class="mt-3 p-4 border-none outline-none bg-white rounded-full w-full" type="text" placeholder="Last Name*">
+            </div>
+            <div>
+              <label class="text-lg font-semibold mb-3" for=""></label>
+              <br>
+              <input class="mt-3 p-4 border-none outline-none bg-white rounded-full w-full" type="text" placeholder="Phone Number*">
+            </div>
+            <div>
+              <label class="text-lg font-semibold mb-3" for=""></label>
+              <br>
+              <input class="mt-3 p-4 border-none outline-none bg-white rounded-full w-full" type="text" placeholder="Email Number*">
+            </div>
+            <div class="md:col-span-2 lg:col-span-2">
+              <label class="text-lg font-semibold mb-3" for=""></label>
+              <br>
+              <textarea rows="7" class="lg:col-span-2 mt-3 p-4 border-none outline-none bg-white rounded-3xl w-full" name="" id="" placeholder="Write your message here"></textarea>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="btn my-3 w-full bg-[#ABEF5F] rounded-3xl md:flex lg:flex text-lg font-bold">
+            Send Mail
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 bg-black stroke-white rounded-3xl">
+              <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" />
+            </svg> 
+          </button>
+        </div>
+      </div>
     </section>
+    
   </main>
   <footer class="bg-black py-14 px-6">
     <div>
@@ -208,7 +275,7 @@
             Rinterio
          </a>
         </h4>
-        <p class="text-center text-slate-500">
+        <p class="text-center text-[#737373]">
           The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.
         </p>
       </div>
@@ -221,8 +288,8 @@
           <li class="text-white"><a>Contact Us</a></li>
         </ul>
       </div>
-      <div class="lg:flex lg:justify-center">
-        <a class="btn w-full lg:w-52 bg-[#ABEF5F] rounded-3xl md:flex lg:flex text-lg font-bold">Book Consult
+      <div class="md:flex md:justify-center lg:flex lg:justify-center">
+        <a class="btn w-full md:w-52 lg:w-52 bg-[#ABEF5F] rounded-3xl md:flex lg:flex text-lg font-bold">Book Consult
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 bg-black stroke-white rounded-3xl">
               <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z" clip-rule="evenodd" />
             </svg>                  
